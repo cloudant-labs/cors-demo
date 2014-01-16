@@ -14,6 +14,7 @@ function get_dbs (username) {
   });
 }
 
+$('#username').focus();
 $('#get_dbs').submit(function (event) {
   var username = event.target[0].value;
   get_dbs(username);
