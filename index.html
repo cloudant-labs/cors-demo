@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>CORS!</title>
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <form id="get_dbs" role="form" class="col-md-4 col-md-offset-4">
+        <div class="form-group">
+          <label>Enter your Cloudant username</label>
+          <input type="text" name="username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>and hit Submit to list your databases</label>
+          <input type="submit" value="Submit" class="form-control">
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <h1 id="title" style="display: none;">Databases</h1>
+        <ul id="dbs" class="list-unstyled"></ul>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
