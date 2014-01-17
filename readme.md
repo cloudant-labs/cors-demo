@@ -20,3 +20,7 @@ Then, download this repo:
 That's it!
 
 If you have any questions or run into any problems, post an issue to the repository or email <support@cloudant.com>. Thanks, and enjoy!
+
+## License
+
+[Apache](http://choosealicense.com/licenses/apache/), yo.
