@@ -12,7 +12,7 @@ Now we'll configure CORS support on Cloudant. Swap `USERNAME` for your account n
 
 Then, download this repo:
 
-    git clone [this]
+    git clone git@github.com:cloudant-labs/cors-demo.git
     cd cors
     python -m SimpleHTTPServer
     # visit http://local.dev:8000
