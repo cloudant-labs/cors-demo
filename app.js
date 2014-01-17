@@ -5,9 +5,10 @@ function get_dbs (username) {
       withCredentials:true
     }
   }).done(function(resp) {
-    var dbs = JSON.parse(resp);
     $('#dbs').empty();
     $('#title').show();
+
+    var dbs = JSON.parse(resp);
     dbs.map(function (db) {
       $('#dbs').append('<li>' + db + '</li>');  
     });
