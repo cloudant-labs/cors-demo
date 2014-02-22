@@ -8,7 +8,7 @@ To use it, first we'll edit out local hosts file to point `local.dev` at `localh
 
 Now we'll configure CORS support on Cloudant. Swap `USERNAME` for your account name:
 
-    curl -i -u USERNAME -X PUT https://USERNAME.cloudant.com/_api/v2/user/config/cors -H "Content-Type: application/json" -d '{"enable_cors":true,"allow_credentials":true,"allow_methods":["GET","PUT","POST","DELETE","OPTIONS"],"origins":{"http://local.dev:8000":{}}}'
+    curl -i -u USERNAME -X PUT https://USERNAME.cloudant.com/_api/v2/user/config/cors -H "Content-Type: application/json" -d '{"enable_cors":true,"allow_credentials":true,"allow_methods":["GET","PUT","POST","DELETE","OPTIONS"],"origins":["http://local.dev:8000"]}'
 
 Then, download this repo:
 
